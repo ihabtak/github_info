@@ -8,7 +8,8 @@ module Github
         { "Authorization" => "Bearer 6da3ae15605325a3c286660818720277dc91e90a" }
         end
     end
-    Schema = GraphQL::Client.load_schema(HTTP)
+     # GraphQL::Client.dump_schema(HTTP, "./db/schema.json")
+    Schema = GraphQL::Client.load_schema("./db/schema.json")
     Client = GraphQL::Client.new(schema: Schema, execute: HTTP)
 
     class User

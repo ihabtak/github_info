@@ -121,3 +121,63 @@ Processing by AppController#show as HTML
 Completed 200 OK in 4563ms (Views: 278.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/show?username=alex" for 127.0.0.1 at 2019-02-19 18:21:05 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"alex"}
+Completed 500 Internal Server Error in 15742ms (ActiveRecord: 0.0ms)
+
+
+  
+QueryExecutionError (502 Bad Gateway):
+  
+lib/github.rb:61:in `find'
+app/controllers/app_controller.rb:7:in `show'
+Started GET "/" for 127.0.0.1 at 2019-02-19 18:21:41 +0100
+Processing by AppController#index as HTML
+  Rendering app/index.html.erb within layouts/application
+  Rendered app/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 456ms (Views: 416.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=alex" for 127.0.0.1 at 2019-02-19 18:21:47 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"alex"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 10894ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=alex" for 127.0.0.1 at 2019-02-19 18:29:29 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"alex"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 17998ms (Views: 901.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=alex" for 127.0.0.1 at 2019-02-19 18:31:22 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"alex"}
+Completed 500 Internal Server Error in 13542ms (ActiveRecord: 0.0ms)
+
+
+  
+QueryExecutionError (502 Bad Gateway):
+  
+lib/github.rb:62:in `find'
+app/controllers/app_controller.rb:7:in `show'
+Started GET "/" for 127.0.0.1 at 2019-02-19 18:31:43 +0100
+Processing by AppController#index as HTML
+  Rendering app/index.html.erb within layouts/application
+  Rendered app/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 190ms (Views: 178.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=alex" for 127.0.0.1 at 2019-02-19 18:31:46 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"alex"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 10234ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
