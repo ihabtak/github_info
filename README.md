@@ -7,6 +7,6 @@
 * Configuration
 
 * Database creation: 
-	-`rails db:migrate`
+	-`rake db:migrate`
 
 
