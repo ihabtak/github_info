@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Github Finder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 18rem;">
+            <img src="<%= @user.avatar_url %>" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 clas
+                s="card-title"><%= @user.name %></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <%= @user.contributions_collection.total_commit_contributions %>
+                  Commits
+                </li>
+                <li class="list-group-item">
+                  <%= @user.contributions_collection.total_pull_request_contributions %>
+                  Pull Request
+                </li>
+                <li class="list-group-item">
+                  <%= @user.contributions_collection.total_pull_request_review_contributions %>
+                  Pull Request Review
+                </li>
+            </ul>
+            <div class="card-body">
+                <a href="<%= @user.url %>" class="card-link" target="_blank">Page Github</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Repo</th>
+                    <th scope="col">Nbr Commits</th>
+                    <th scope="col">Languages</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @user.contributions_collection.commit_contributions_by_repository.each do |r| %>
+                  <tr>
+                    <td>
+                      <a href="<%= r.repository.url %>">
+                        <%= r.repository.name %>
+                      </a>
+                    </td>
+                    <td>
+                      XX
+                    </td>
+                    <td>
+                      <% r.repository.languages.nodes.each do |l| %>
+                        <span class="badge badge-pill badge-primary" style="background-color:<%= l.color %>">
+                          <%= l.name %>
+                        </span>
+                      <% end %>
+                    </td>
+                  </tr>
+                <% end %>
+                
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+Started GET "/show?username=alex" for 127.0.0.1 at 2019-02-19 14:49:08 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"alex"}
+Started GET "/" for 127.0.0.1 at 2019-02-19 14:49:15 +0100
+Processing by AppController#index as HTML
+  Rendering app/index.html.erb within layouts/application
+  Rendered app/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 264ms (Views: 245.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 8288ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=alex" for 127.0.0.1 at 2019-02-19 14:49:31 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"alex"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 3092ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=dorian-coffinet" for 127.0.0.1 at 2019-02-19 14:51:01 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"dorian-coffinet"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 2927ms (Views: 180.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=ihab" for 127.0.0.1 at 2019-02-19 14:51:21 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"ihab"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1131ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=ihabtak" for 127.0.0.1 at 2019-02-19 14:51:49 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"ihabtak"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 1240ms (Views: 189.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=ihabtak%40gmail.com" for 127.0.0.1 at 2019-02-19 14:56:30 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"ihabtak@gmail.com"}
+Completed 500 Internal Server Error in 1046ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Github::User::QueryExecutionError):
+  
+lib/github.rb:61:in `find'
+app/controllers/app_controller.rb:7:in `show'
+Started GET "/show?username=ihabtak%40gmail.com" for 127.0.0.1 at 2019-02-19 15:05:49 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"ihabtak@gmail.com"}
+Completed 500 Internal Server Error in 5422ms (ActiveRecord: 0.0ms)
+
+
+  
+QueryExecutionError (Variable user_id of type ID! was provided invalid value):
+  
+lib/github.rb:61:in `find'
+app/controllers/app_controller.rb:7:in `show'
+Started GET "/" for 127.0.0.1 at 2019-02-19 15:09:36 +0100
+Processing by AppController#index as HTML
+  Rendering app/index.html.erb within layouts/application
+  Rendered app/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1757ms (Views: 1708.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=josh" for 127.0.0.1 at 2019-02-19 15:16:01 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"josh"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 7790ms (Views: 589.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-19 15:52:28 +0100
+Processing by AppController#index as HTML
+  Rendering app/index.html.erb within layouts/application
+  Rendered app/index.html.erb within layouts/application (49.8ms)
+Completed 200 OK in 1285ms (Views: 1178.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=josh" for 127.0.0.1 at 2019-02-19 15:52:34 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"josh"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 6374ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
