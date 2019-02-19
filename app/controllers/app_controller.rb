@@ -4,7 +4,7 @@ class AppController < ApplicationController
 
   def show
     user_id = Github::User.get_user_id(params[:username])
-    @user = Github::User.find(params[:username], user_id)
+    @user = Github::User.find(params[:username], user_id.id)
     top_langs = {}
     @user.contributions_collection.commit_contributions_by_repository.each do |repository|
       repository.repository.languages.nodes.each do |lang|

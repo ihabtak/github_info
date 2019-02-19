@@ -97,3 +97,27 @@ Processing by AppController#show as HTML
 Completed 200 OK in 6374ms (Views: 68.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/show?username=josh" for 127.0.0.1 at 2019-02-19 16:19:24 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"josh"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 8205ms (Views: 1231.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=josh" for 127.0.0.1 at 2019-02-19 16:25:41 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"josh"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 4210ms (Views: 265.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?username=alex" for 127.0.0.1 at 2019-02-19 16:26:30 +0100
+Processing by AppController#show as HTML
+  Parameters: {"username"=>"alex"}
+  Rendering app/show.html.erb within layouts/application
+  Rendered app/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 4563ms (Views: 278.5ms | ActiveRecord: 0.0ms)
+
+

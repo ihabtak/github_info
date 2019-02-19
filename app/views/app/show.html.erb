@@ -59,7 +59,7 @@
                       </a>
                     </td>
                     <td>
-                      XX
+                      <%= r.repository.default_branch_ref.target.history.total_count %>
                     </td>
                     <td>
                       <% r.repository.languages.nodes.each do |l| %>
