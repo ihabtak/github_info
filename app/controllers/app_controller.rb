@@ -1,3 +1,4 @@
+require (File.join(Rails.root, 'lib', 'github.rb'))
 class AppController < ApplicationController
   def index
   end
